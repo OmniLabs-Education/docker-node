@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  docker-app:
+    build: .
+    container_name: docker-app
+    ports: 
+      - 3000:3000
+    volumes: 
+      - .:/usr/docker-app
